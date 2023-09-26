@@ -1,0 +1,40 @@
+import java.io.*;
+import java.lang.*;
+import java.lang.Math;
+import java.util.Scanner;
+
+//Driver class
+public class Try_Catch_Darian_H {
+	// main function
+	public static void main(String[] args)
+	{
+		// Stores two numbers
+		int num1 = 0;
+		int num2 = 0;
+		int o = 0;
+		// Take input from the user
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("This program adds two integers values to get the sum.\n");
+		
+		try {
+		// Take the inputs
+		System.out.println("Enter the first number.\n");
+		num1 = sc.nextInt();
+		System.out.println("Enter the second number.\n");
+		num2 = sc.nextInt();
+		}
+		catch (Exception e) {
+		System.out.println("You entered wrong input, please input two integers.");
+		return;
+		}
+		o = num1 + num2;
+		System.out.println("The final result:");
+		System.out.println();
+
+		// print the final result
+		System.out.println(num1 + " " + "+" + " " + num2
+						+ " = " + o);
+
+	}
+}
